@@ -11,8 +11,8 @@ Need full names for these:
 
 ### Wireless
 
-* pastor: ____
-* handheld: ___
+- **Handheld**: XS true diversity receiver, 548.250 B.U ch00
+- **Pastor**: ew100 G4, 492.900 Mz
 
 ## Speakers, Monitors and Amps
 
@@ -22,7 +22,8 @@ Need full names for these:
 
 ## Front of House
 
-* Mixer: Mackie 24ch analog (PART?) (MANUAL?)
+* current mixer: Behringer X32
+* old Mixer: Mackie 24ch analog (PART?) (MANUAL?)
 * 16-channel snake
 * dbx DriveRack PART?
 
