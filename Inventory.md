@@ -11,7 +11,7 @@ Need full names for these:
 
 ### Wireless
 
-- **Handheld**: XS true diversity receiver, 548.250 B.U ch00
+- **Handheld**: XS true diversity receiver EM 10, 548.250 B.U ch00
 - **Pastor**: ew100 G4, 492.900 Mz
 
 ## Speakers, Monitors and Amps
@@ -36,5 +36,5 @@ Need full names for these:
 # Computers
 
 * Mac Mini ___ (Proclaim)
-* Mac Mini ___ (switcher control)
+* Mac Mini 2018 Core i3 3.6GHz (switcher control)
 
