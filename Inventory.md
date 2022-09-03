@@ -36,5 +36,5 @@ Need full names for these:
 # Computers
 
 * Mac Mini ___ (Proclaim)
-* Mac Mini 2018 Core i3 3.6GHz (switcher control)
+* [Mac Mini 2012 Core i3 3.6GHz](https://everymac.com/systems/apple/mac_mini/specs/mac-mini-core-i7-2.3-late-2012-specs.html) (switcher control)
 
