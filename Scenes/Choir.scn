@@ -1,4 +1,4 @@
-#4.0# "Choir" "" %000000000 1                                                                                        
+#4.0# "Choir" "" %000000000 1                                                                                                  
 /config/chlink OFF OFF OFF OFF OFF OFF OFF ON ON OFF OFF OFF OFF OFF OFF OFF
 /config/auxlink ON OFF ON ON
 /config/fxlink ON ON ON ON
@@ -211,7 +211,7 @@
 /ch/06/eq/4 HCut 10k02 +0.00 2.0
 /ch/06/mix ON  +0.3 OFF +0 OFF   -oo
 /ch/06/mix/01 ON  -2.5 +0 EQ-> 0
-/ch/06/mix/02 ON  +0.8
+/ch/06/mix/02 ON  -4.5
 /ch/06/mix/03 ON  +6.8 +0 EQ-> 0
 /ch/06/mix/04 ON  -1.8
 /ch/06/mix/05 ON  -7.3 +0 EQ-> 0
@@ -369,9 +369,9 @@
 /ch/11/eq/2 PEQ 924.8 +0.00 3.5
 /ch/11/eq/3 PEQ 2k79 +0.00 2.3
 /ch/11/eq/4 HShv 7k34 +3.00 2.0
-/ch/11/mix ON  +4.2 OFF +0 OFF   -oo
+/ch/11/mix ON  +1.9 OFF +0 OFF   -oo
 /ch/11/mix/01 ON  -7.8 +0 EQ-> 0
-/ch/11/mix/02 ON  +7.3
+/ch/11/mix/02 ON  -3.5
 /ch/11/mix/03 ON   -oo +0 EQ-> 0
 /ch/11/mix/04 ON  -6.3
 /ch/11/mix/05 ON  -3.5 +0 EQ-> 0
@@ -401,9 +401,9 @@
 /ch/12/eq/2 PEQ 496.6 -2.00 2.0
 /ch/12/eq/3 PEQ 1k26 -10.5 1.0
 /ch/12/eq/4 HShv 4k68 -3.50 2.0
-/ch/12/mix ON  +4.4 OFF +0 OFF   -oo
+/ch/12/mix ON  +2.0 OFF +0 OFF   -oo
 /ch/12/mix/01 ON  -5.3 +0 EQ-> 0
-/ch/12/mix/02 ON -81.0
+/ch/12/mix/02 ON  -9.0
 /ch/12/mix/03 ON   -oo +0 EQ-> 0
 /ch/12/mix/04 ON   0.0
 /ch/12/mix/05 ON  -1.8 +0 EQ-> 0
@@ -1167,7 +1167,7 @@
 /auxin/05/eq/2 PEQ 496.6 +0.00 2.0
 /auxin/05/eq/3 PEQ 1k97 +0.00 2.0
 /auxin/05/eq/4 HShv 10k02 +0.00 2.0
-/auxin/05/mix OFF -89.5 OFF -100 OFF   -oo
+/auxin/05/mix OFF   -oo OFF -100 OFF   -oo
 /auxin/05/mix/01 ON   -oo -100 EQ-> 0
 /auxin/05/mix/02 ON   -oo
 /auxin/05/mix/03 ON   -oo -100 EQ-> 0
@@ -1482,7 +1482,7 @@
 /bus/02/eq/4 PEQ 1k97 +0.00 2.0
 /bus/02/eq/5 PEQ 5k02 +0.00 2.0
 /bus/02/eq/6 HShv 10k02 +0.00 2.0
-/bus/02/mix ON  -7.0 OFF +0 OFF   -oo
+/bus/02/mix ON  -0.5 OFF +0 OFF   -oo
 /bus/02/mix/01 ON   -oo +0 POST 0
 /bus/02/mix/02 ON   -oo
 /bus/02/mix/03 ON   -oo +0 POST 0
@@ -1851,7 +1851,7 @@
 /main/st/eq/4 PEQ 3k09 -0.25 2.0
 /main/st/eq/5 PEQ 4k37 +0.00 2.0
 /main/st/eq/6 HShv 10k02 +0.00 2.0
-/main/st/mix ON  -5.2 +0
+/main/st/mix ON  -7.0 +0
 /main/st/mix/01 ON   -oo +0 POST 0
 /main/st/mix/02 ON   -oo
 /main/st/mix/03 ON -18.5 +0 POST 0
@@ -2030,7 +2030,7 @@
 /headamp/039 +42.0 OFF
 /headamp/040 +41.0 OFF
 /headamp/041 +31.0 OFF
-/headamp/042 +39.5 OFF
+/headamp/042 +38.0 OFF
 /headamp/043 +39.5 ON
 /headamp/044 +0.0 OFF
 /headamp/045 +0.0 OFF
@@ -2116,3 +2116,11 @@
 /headamp/125 +0.0 OFF
 /headamp/126 +0.0 OFF
 /headamp/127 +0.0 OFF
+/-stat/selidx Ch11
+/-stat/chfaderbank 0
+/-stat/grpfaderbank 0
+/-stat/sendsonfader OFF
+/-stat/bussendbank 0
+/-stat/eqband 0
+/-stat/userbank 0
+/-stat/dcaspill 0
