@@ -132,38 +132,35 @@ if st.session_state.get('channel_crossbar') is None or st.button("Reset channels
     st.session_state.channel_crossbar = Crossbar(n=32)
 channel_crossbar = st.session_state.channel_crossbar
 
-st.write(channel_crossbar.get_mappings())
-
 st.header("New Channels")
-
-print("Rerunning")
 
 def handle_change(key, prev_old, prev_new):
     cur_old_channel = st.session_state[key]
-    print("Callback", key, cur_old_channel)
     if prev_old is not None:
         channel_crossbar.disconnect(old=prev_old, new=prev_new)
     if cur_old_channel is not None:
-        print("connecting", cur_old_channel, prev_new)
         channel_crossbar.connect(old=cur_old_channel, new=prev_new)
 
-for i in range(2):
+for i in range(32):
     num = str(i+1).zfill(2)
     key = f"ch{num}"
 
     available_channels = channel_crossbar.get_unmapped_olds()
     already_mapped_old_channel_num = channel_crossbar.new_to_old[i]
-    options = [None] + available_channels
+    options = available_channels
+    if already_mapped_old_channel_num is not None:
+        options = [already_mapped_old_channel_num] + options
+    options = [None] + options
     index = options.index(already_mapped_old_channel_num)
     
     def format_func(x):
         if x is None:
             return ''
         else:
-            return str(x) + channel_names[f"ch{x+1:02d}"]
+            return channel_names[f"ch{x+1:02d}"] + f" ({x+1})"
 
     st.selectbox(
-        f"Channel {num}", [None] + available_channels,
+        f"Channel {num}", options,
         key=key, index=index,
         format_func=format_func,
         on_change=handle_change,
