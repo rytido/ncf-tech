@@ -1,5 +1,6 @@
 import streamlit as st
 import re
+import json
 from collections import namedtuple
 
 scene_file = st.file_uploader("Scene file", type="scn")
@@ -133,6 +134,13 @@ if st.session_state.get('channel_crossbar') is None or st.button("Reset channels
     st.session_state.channel_crossbar = Crossbar(n=32)
 channel_crossbar = st.session_state.channel_crossbar
 
+load_crossbar = st.text_input("Paste crossbar JSON here")
+# Example crossbar: [[0, 9], [1, 8], [2, 10], [3, 13], [4, 18], [5, 11], [6, 3], [7, 4], [8, 5], [9, 12], [10, 6], [11, 7], [12, 0], [13, 1], [14, 14], [15, 15], [16, 16], [17, 17], [18, 2], [19, 19], [20, 20], [21, 21], [22, 22], [23, 23], [24, 24], [25, 25], [26, 26], [27, 27], [28, 28], [29, 29], [30, 30], [31, 31]]
+if load_crossbar:
+    st.session_state.channel_crossbar = channel_crossbar = Crossbar(n=32)
+    for old, new in json.loads(load_crossbar):
+        channel_crossbar.connect(old, new)
+
 st.header("New Channels")
 
 def handle_change(key, prev_old, prev_new):
@@ -208,4 +216,6 @@ for setting in parsed_lines:
 
 new_scene_serialized = "\n".join(new_scene) + "\n"
 st.download_button("Download new scene", new_scene_serialized, "scene.scn", mime="text/plain")
-st.markdown("```" + new_scene_serialized + "```")
+
+st.header("Debug")
+st.code(json.dumps(channel_crossbar.get_mappings()))
