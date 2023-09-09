@@ -166,6 +166,14 @@ for i in range(32):
         on_change=handle_change,
         kwargs=dict(key=key, prev_old=already_mapped_old_channel_num, prev_new=i))
 
+# Source codes
+# 0-3: off, mainL/R, mono
+# 4-19: mixbuses 1-16
+# 20-25: Matrix 1-6
+# 26-57: Channels 1-32
+# 58-63: Aux 1-6
+# 64-73: FX1L-FX4R
+# 74-76: monL, monR, talkback
 
 # Regenerate the scene file
 already_warned = {}
@@ -180,7 +188,20 @@ for setting in parsed_lines:
                 already_warned[old_channel_num] = True
             continue
         setting = setting.with_replaced_path_part(1, str(new_channel_number + 1).zfill(2))
-    
+    elif setting.path.startswith("/outputs") and len(setting.path_parts) == 3:
+        src_code_raw = setting.value.split(" ")[0]
+        src_code = int(src_code_raw)
+        if 26 <= src_code <= 57:
+            old_channel_num = src_code - 26
+            new_channel_number = channel_crossbar.old_to_new[old_channel_num]
+            if new_channel_number is None:
+                new_src_code = 0
+                st.warning(f"Main output {setting.path} was from un-mapped channel {old_channel_num}. Setting to off.")
+            else:
+                new_src_code = new_channel_number + 26
+            setting = ConfigLine(
+                path=setting.path,
+                value=f"{new_src_code} {setting.value.split(' ', 1)[1]}")
     new_scene.append(str(setting))
 
 st.download_button("Download new scene", "\n".join(new_scene), "scene.scn", mime="text/plain")
