@@ -210,7 +210,11 @@ else:
 already_warned = {}
 new_scene = [header]
 for setting in parsed_lines:
-    if setting.match_context("/ch"):
+    if setting.path.startswith("/config/chlink"):
+        setting = ConfigLine(
+            path=setting.path,
+            value=" ".join(["ON" if x else "OFF" for x in new_channel_links]))
+    elif setting.match_context("/ch"):
         old_channel_num = int(setting.path_parts[1]) - 1
         new_channel_number = channel_crossbar.old_to_new[old_channel_num]
         if new_channel_number is None:
