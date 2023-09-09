@@ -85,7 +85,8 @@ class ConfigLine(namedtuple("ConfigLine", 'path value')):
     def with_replaced_path_part(self, index: int, new_value: str) -> "ConfigLine":
         path_parts = self.path_parts.copy()
         path_parts[index] = new_value
-        return ConfigLine("/".join(path_parts), self.value)
+        preamble = self.path.split("/")[0]
+        return ConfigLine("/".join([preamble] + path_parts), self.value)
 
 
 def parse_cfgline(line):
@@ -184,7 +185,8 @@ for setting in parsed_lines:
         new_channel_number = channel_crossbar.old_to_new[old_channel_num]
         if new_channel_number is None:
             if not already_warned.get(old_channel_num):
-                st.write("Skipping channel ", old_channel_num)
+                old_channel_name = channel_names[f"ch{old_channel_num+1:02d}"]
+                st.write("Skipping channel ", old_channel_name, " because it is not mapped.")
                 already_warned[old_channel_num] = True
             continue
         setting = setting.with_replaced_path_part(1, str(new_channel_number + 1).zfill(2))
@@ -204,5 +206,6 @@ for setting in parsed_lines:
                 value=f"{new_src_code} {setting.value.split(' ', 1)[1]}")
     new_scene.append(str(setting))
 
-st.download_button("Download new scene", "\n".join(new_scene), "scene.scn", mime="text/plain")
-st.markdown("```" + "\n".join(new_scene) + "```")
+new_scene_serialized = "\n".join(new_scene) + "\n"
+st.download_button("Download new scene", new_scene_serialized, "scene.scn", mime="text/plain")
+st.markdown("```" + new_scene_serialized + "```")
