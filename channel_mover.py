@@ -120,6 +120,9 @@ lines = scene_file.read().decode('utf-8').splitlines()
 header = lines.pop(0)
 parsed_lines = [parse_cfgline(line) for line in lines]
 for line in lines:
+    if line.startswith("/config/chlink"):
+        channel_links = [x == "ON" for x in line.split(" ")[1:]]
+        assert len(channel_links) == 16
     if match := channel_pattern.match(line):
         channel_number = match.group(1)
         channel_name = match.group(2)
@@ -166,7 +169,8 @@ for i in range(32):
         if x is None:
             return ''
         else:
-            return channel_names[f"ch{x+1:02d}"] + f" ({x+1})"
+            is_linked = (x % 2 == 0) and channel_links[x // 2]
+            return channel_names[f"ch{x+1:02d}"] + f" ({x+1})" + (" (linked)" if is_linked else "")
 
     st.selectbox(
         f"Channel {num}", options,
@@ -174,6 +178,24 @@ for i in range(32):
         format_func=format_func,
         on_change=handle_change,
         kwargs=dict(key=key, prev_old=already_mapped_old_channel_num, prev_new=i))
+
+new_channel_links = []
+for i in range(16):
+    new_channel_idx = i * 2
+    old_channel_idx = channel_crossbar.new_to_old[new_channel_idx]
+    if old_channel_idx is None:
+        is_linked = False
+    else:
+        # New channel 2i should be linked if old channel was linked
+        is_linked = channel_links[old_channel_idx // 2]
+        if is_linked and old_channel_idx % 2 == 1:
+            st.warning(f"Link mismatch {old_channel_idx} -> {new_channel_idx}")
+    new_channel_links.append(is_linked)
+
+if channel_links != new_channel_links:
+    st.write("New channel links:", new_channel_links)
+else:
+    st.write("Channel links unchanged")
 
 # Source codes
 # 0-3: off, mainL/R, mono
@@ -216,6 +238,8 @@ for setting in parsed_lines:
 
 new_scene_serialized = "\n".join(new_scene) + "\n"
 st.download_button("Download new scene", new_scene_serialized, "scene.scn", mime="text/plain")
+
+st.info("Remember to turn off param and channel safes before loading the new scene!")
 
 st.header("Debug")
 st.code(json.dumps(channel_crossbar.get_mappings()))
