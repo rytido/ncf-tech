@@ -4,9 +4,8 @@
 
 - Physical
   - [ ] Downstairs TV and speaker on
-  - [ ] Pastor mic receiver on? (power strip by piano should be on)
   - [ ] Confidence monitor is working (if not, unplug and replug the marked USB connector on the Proclaim Mac)
-  - [ ] Battery in handheld mic shows at least 1 bar
+  - [ ] Battery in handheld mic shows at least 2 bar
   - [ ] Battery in pastor mic shows full bars
 - YouTube
   - [ ] Stream delay should be set to 1 min
@@ -28,6 +27,7 @@
   - [ ] Mute vocal mics
   - Watch for pop-up announcements (lunch, Sunday School, etc.). Don't turn off too soon.
   - [ ] Run slideshow for a few minutes
+  - [ ] Leave both computers on if adult Sunday School
   - [ ] End Stream on YouTube
   - [ ] Off Air on ATEM Mini Pro
 - Cleanup
