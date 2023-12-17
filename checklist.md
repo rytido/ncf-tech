@@ -6,7 +6,7 @@
   - [ ] Downstairs TV and speaker on
   - [ ] Confidence monitor is working (if not, unplug and replug the marked USB connector on the Proclaim Mac)
   - [ ] Battery in handheld mic shows at least 2 bar
-  - [ ] Battery in pastor mic shows full bars
+  - [ ] Battery in pastor mic shows full bars (after being on for 15 seconds--it reads high at first)
 - YouTube
   - [ ] Stream delay should be set to 1 min
   - [ ] Title should read "SERMON TITLE | PASSAGE | SPEAKER | mm-dd-yy | Livestream"
