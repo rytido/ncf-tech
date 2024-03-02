@@ -16,14 +16,13 @@ Need full names for these:
 
 ## Speakers, Monitors and Amps
 
-* Main PA:
+* Main PA: JBL EON 612
 * Monitor: 4x ___
 * Floor monitor:
 
 ## Front of House
 
 * current mixer: Behringer X32
-* old Mixer: Mackie 24ch analog (PART?) (MANUAL?)
 * 16-channel snake
 * dbx DriveRack PART?
 

@@ -192,6 +192,9 @@ for i in range(16):
             st.warning(f"Link mismatch {old_channel_idx} -> {new_channel_idx}")
     new_channel_links.append(is_linked)
 
+# TODO: verify that linked channels are still matched identically
+# (this should also ensure that a linked channel hasn't ended up at an even index)
+
 if channel_links != new_channel_links:
     st.write("New channel links:", new_channel_links)
 else:
