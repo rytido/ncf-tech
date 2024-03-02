@@ -1,0 +1,13 @@
+#2.0# 4 "Moshay Kick" 0 %0011111100111100 1                                                                                        
+/config "KICK" 1 GN
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24  24
+/gate ON GATE -31.0 18.0 0 63.2  185 0
+/gate/filter OFF 1.0 479.8
+/dyn ON COMP RMS LIN -38.0 4.0 1 6.50 60 0.32  40 PRE 0
+/dyn/filter ON HC6 5k20
+/eq ON
+/eq/1 VEQ 56.4 +4.00 1.1
+/eq/2 PEQ 351.6 -13.7 1.8
+/eq/3 PEQ 1k97 -0.50 2.0
+/eq/4 PEQ 4k85 +4.25 1.8

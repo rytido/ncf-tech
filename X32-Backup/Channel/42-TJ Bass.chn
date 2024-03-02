@@ -1,0 +1,13 @@
+#2.0# 44 "TJ Bass" 0 %0011111100110000 1                                                                                           
+/config "BASS" 1 MG
+/delay OFF   0.3
+/preamp +0.0 OFF OFF 24  20
+/gate OFF GATE -80.0 60.0 1  502  983 0
+/gate/filter OFF 3.0 990.9
+/dyn ON COMP PEAK LOG -37.5 5.0 1 5.00 10  200  538 POST 0
+/dyn/filter OFF 3.0 1k78
+/eq ON
+/eq/1 PEQ 176.2 -5.00 2.0
+/eq/2 PEQ 306.2 +0.00 2.0
+/eq/3 PEQ 1k97 +5.75 1.1
+/eq/4 HShv 10k02 +0.00 2.0

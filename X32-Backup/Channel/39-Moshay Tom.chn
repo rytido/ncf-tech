@@ -1,0 +1,13 @@
+#2.0# 3 "Moshay Tom" 0 %0011111100011100 1                                                                                         
+/config "TOM" 1 GN
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24  48
+/gate ON GATE -29.5 60.0 1 28.2  471 0
+/gate/filter ON HC6 2k89
+/dyn OFF COMP PEAK LOG 0.0 3.0 1 0.00 10 10.0  151 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 98.0 +2.50 2.4
+/eq/2 PEQ 496.6 -10.2 1.9
+/eq/3 PEQ 990.9 -9.75 1.7
+/eq/4 VEQ 8k73 +3.25 2.1

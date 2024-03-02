@@ -1,0 +1,13 @@
+#2.0# 30 "TJ Kick SM91" 0 %0011111100010000 1                                                                                      
+/config "KICK-SM91" 1 GN
+/delay OFF   0.3
+/preamp +0.0 OFF OFF 24  20
+/gate OFF GATE -80.0 60.0 1  502  983 0
+/gate/filter OFF 3.0 990.9
+/dyn OFF COMP PEAK LOG 0.0 3.0 1 0.00 10 10.0  151 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 124.7 +0.00 2.0
+/eq/2 PEQ 496.6 -15.0 2.0
+/eq/3 PEQ 1k97 +0.00 2.0
+/eq/4 HShv 7k87 +9.50 2.0

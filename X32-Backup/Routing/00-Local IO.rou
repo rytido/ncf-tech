@@ -1,0 +1,6 @@
+#2.0# 1 "Local IO" 2 %0000000000000000 1                                                                                                  
+/config/routing/IN AN1-8 AN9-16 AN17-24 AN25-32 AUX1-4
+/config/routing/AES50A OUT1-8 OUT9-16 OUT1-8 OUT9-16 P161-8 P169-16
+/config/routing/AES50B OUT1-8 OUT9-16 OUT1-8 OUT9-16 P161-8 P169-16
+/config/routing/CARD AN1-8 AN9-16 AN17-24 AN25-32
+

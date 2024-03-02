@@ -1,0 +1,13 @@
+#2.0# 25 "Whisky C Vox" 0 %0011111100110100 1                                                                                      
+/config "C VOX" 1 BL
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24 121
+/gate OFF GATE -80.0 60.0 1  502  983 0
+/gate/filter OFF 3.0 990.9
+/dyn ON COMP PEAK LOG -27.0 3.0 0 4.50 15 0.56  35 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 195.4 -7.25 1.7
+/eq/2 PEQ 432.5 -2.25 1.5
+/eq/3 PEQ 3k09 -2.75 1.1
+/eq/4 PEQ 15k17 -0.50 2.9

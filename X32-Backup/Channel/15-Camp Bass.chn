@@ -1,0 +1,13 @@
+#2.0# 78 "Camp Bass" 0 %0011111100110000 1                                                                                         
+/config "EL BASS" 1 MG
+/delay OFF   0.3
+/preamp +0.5 OFF OFF 24  20
+/gate OFF GATE -80.0 60.0 1  502  983 0
+/gate/filter OFF 3.0 990.9
+/dyn ON COMP PEAK LOG -17.0 4.0 1 5.00 0 2.00  83 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 129.1 +1.75 2.0
+/eq/2 PEQ 496.6 +0.00 2.0
+/eq/3 VEQ 1k02 -6.75 2.0
+/eq/4 PEQ 5k20 +6.75 2.0

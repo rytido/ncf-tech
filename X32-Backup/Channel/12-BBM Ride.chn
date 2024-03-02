@@ -1,0 +1,13 @@
+#2.0# 4 "BBM Ride" 0 %0011111100010100 1                                                                                           
+/config "RIDE" 1 GN
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24 128
+/gate OFF GATE -80.0 39.0 0 0.80  23 0
+/gate/filter OFF 2.0 195.4
+/dyn OFF COMP PEAK LOG 0.0 3.0 1 0.00 10 10.0  151 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 LCut 124.7 +0.00 2.0
+/eq/2 PEQ 417.9 -2.50 2.0
+/eq/3 PEQ 1k35 -5.75 2.0
+/eq/4 HShv 5k57 +2.75 2.0

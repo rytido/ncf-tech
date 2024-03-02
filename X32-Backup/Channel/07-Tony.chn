@@ -1,0 +1,31 @@
+#4.0# 8 "Tony" 0 %0011111100110100 1                                                                                           
+/config "Pastor" 1 RD
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24 128
+/gate OFF EXP3 -57.5 13.0 5 63.2  471 0
+/gate/filter OFF 3.0 990.9
+/dyn ON COMP PEAK LOG -23.5 4.0 3 6.00 19 2.24  185 POST 0 100 OFF
+/dyn/filter OFF 3.0 654.7
+/eq ON
+/eq/1 LShv 216.8 -3.00 4.8
+/eq/2 PEQ 550.8 -5.50 2.0
+/eq/3 PEQ 1k91 -5.25 2.1
+/eq/4 HShv 14k15 -2.75 2.0
+/mix ON  -2.9 ON +0 OFF   -oo
+/mix/01 ON   -oo +0 EQ-> 0
+/mix/02 ON  -4.8
+/mix/03 ON   -oo +0 EQ-> 0
+/mix/04 ON   -oo
+/mix/05 ON   -oo +0 EQ-> 0
+/mix/06 ON   -oo
+/mix/07 ON  +4.3 +0 POST 0
+/mix/08 ON  +4.3
+/mix/09 ON -53.0 +0 EQ-> 0
+/mix/10 ON -53.0
+/mix/11 ON   -oo +0 POST 0
+/mix/12 ON   -oo
+/mix/13 ON   -oo +0 POST 0
+/mix/14 ON   -oo
+/mix/15 ON -14.5 -42 POST 0
+/mix/16 ON -14.5
+/headamp/028 +29.0 OFF

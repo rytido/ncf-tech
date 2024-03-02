@@ -1,0 +1,13 @@
+#2.0# 23 "Whisky Bass Mic" 0 %0011111100010100 1                                                                                   
+/config "BASS MIC" 1 MG
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24  27
+/gate OFF GATE -80.0 60.0 1  502  983 0
+/gate/filter OFF 3.0 990.9
+/dyn OFF COMP PEAK LOG 0.0 3.0 1 0.00 10 10.0  151 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 209.4 -9.25 3.9
+/eq/2 PEQ 805.4 +0.00 2.2
+/eq/3 PEQ 2k99 +6.50 1.6
+/eq/4 HShv 10k02 +0.00 2.0

@@ -1,0 +1,13 @@
+#2.0# 35 "TJ Floor Tom 1" 0 %0011111100011100 1                                                                                    
+/config "F TOM 1" 1 GN
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24  52
+/gate ON GATE -59.5 60.0 1  100  504 0
+/gate/filter ON 3.0 188.8
+/dyn OFF COMP PEAK LOG 0.0 3.0 1 0.00 10 10.0  151 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 124.7 +0.00 2.0
+/eq/2 PEQ 496.6 -10.7 2.1
+/eq/3 PEQ 1k97 +0.00 2.0
+/eq/4 HShv 10k02 +10.5 2.0

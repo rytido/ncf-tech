@@ -1,0 +1,13 @@
+#2.0# 14 "Whisky Kick" 0 %0011111100111000 1                                                                                       
+/config "KICK" 1 GN
+/delay OFF   2.1
+/preamp +0.0 OFF OFF 24  32
+/gate ON GATE -51.0 60.0 4 0.71  258 0
+/gate/filter OFF 3.0 990.9
+/dyn ON COMP PEAK LOG -8.5 2.5 1 5.00 3 31.7  315 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 50.8 +3.25 1.4
+/eq/2 PEQ 202.3 -14.7 2.0
+/eq/3 PEQ 7k87 +6.25 1.1
+/eq/4 PEQ 7k87 +13.2 0.8

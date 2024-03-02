@@ -1,0 +1,13 @@
+#2.0# 81 "Camp MOTIF" 0 %0011111100110000 1                                                                                        
+/config "MOTIF" 1 CY
+/delay OFF   0.3
+/preamp -6.8 OFF OFF 24  20
+/gate OFF GATE -80.0 60.0 1  502  983 0
+/gate/filter OFF 3.0 990.9
+/dyn ON COMP PEAK LOG -23.5 3.0 1 5.50 0 1.78  77 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 124.7 +0.00 2.0
+/eq/2 PEQ 496.6 +0.00 2.0
+/eq/3 PEQ 4k08 -6.25 2.0
+/eq/4 HShv 10k02 +0.00 2.0

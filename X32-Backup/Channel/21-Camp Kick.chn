@@ -1,0 +1,13 @@
+#2.0# 70 "Camp Kick" 0 %0011111100111000 1                                                                                         
+/config "KICK" 1 GN
+/delay OFF   0.3
+/preamp -1.8 OFF OFF 24  20
+/gate ON GATE -35.0 40.0 0 5.02  68 0
+/gate/filter OFF 3.0 98.0
+/dyn ON COMP PEAK LOG -18.0 3.0 1 10.0 0 1.42  42 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 VEQ 37.2 +8.75 2.0
+/eq/2 PEQ 182.4 -14.0 2.0
+/eq/3 PEQ 1k30 -5.75 2.0
+/eq/4 HShv 4k37 +9.25 2.0

@@ -1,0 +1,13 @@
+#2.0# 75 "Camp Mid Tom" 0 %0011111100011000 1                                                                                      
+/config "MID TOM" 1 GN
+/delay OFF   0.3
+/preamp +0.0 OFF OFF 24  20
+/gate ON GATE -44.0 40.0 18 8.93  276 0
+/gate/filter ON 1.0 295.8
+/dyn OFF COMP PEAK LOG -25.0 10 1 6.50 10 10.0  151 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 124.7 +0.00 2.0
+/eq/2 PEQ 496.6 -9.25 2.0
+/eq/3 PEQ 1k97 +0.00 2.0
+/eq/4 HShv 10k02 +0.00 2.0

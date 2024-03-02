@@ -1,0 +1,13 @@
+#2.0# 10 "Moshay Mix Bus" 0 %0011000000110000 1                                                                                    
+/config "MIX BUS" 1 WH
+/dyn ON COMP PEAK LOG -18.0 2.5 0 1.50 10 17.8  28 PRE 0
+/dyn/filter ON LC12 91.4
+/eq ON
+/eq/1 VEQ 54.5 +1.00 2.0
+/eq/2 PEQ 158.9 +0.00 2.0
+/eq/3 PEQ 550.8 -7.75 6.7
+/eq/4 PEQ 1k97 +0.00 2.0
+/eq/5 PEQ 5k02 +0.00 2.0
+/eq/6 HShv 7k09 +1.50 2.0
+/mix ON   -oo OFF +0 OFF   -oo
+/mix/01 ON   -oo +0 POST

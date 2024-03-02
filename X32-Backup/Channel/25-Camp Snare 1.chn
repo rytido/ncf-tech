@@ -1,0 +1,13 @@
+#2.0# 71 "Camp Snare 1" 0 %0011111100111100 1                                                                                      
+/config "SNARE" 1 GN
+/delay OFF   0.3
+/preamp +4.8 OFF ON 24  89
+/gate ON GATE -36.5 40.0 0 12.6  141 0
+/gate/filter OFF 3.0 990.9
+/dyn ON COMP PEAK LOG -19.0 3.0 1 7.00 0 0.50  40 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 153.5 +7.50 2.0
+/eq/2 PEQ 550.8 +5.00 3.2
+/eq/3 PEQ 1k06 -15.0 2.0
+/eq/4 HShv 10k02 +0.00 2.0

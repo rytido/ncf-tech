@@ -1,0 +1,13 @@
+#2.0# 87 "Camp Trombone 2" 0 %0011111100110100 1                                                                                   
+/config "TROMBONE" 1 WH
+/delay OFF   0.3
+/preamp +4.3 OFF ON 24  77
+/gate OFF GATE -80.0 60.0 1  502  983 0
+/gate/filter OFF 3.0 990.9
+/dyn ON COMP PEAK LOG -15.0 4.0 1 4.50 0 5.02  83 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 124.7 +0.00 2.0
+/eq/2 PEQ 351.6 +5.25 2.0
+/eq/3 PEQ 2k51 -14.7 4.3
+/eq/4 HShv 6k62 +1.75 2.0

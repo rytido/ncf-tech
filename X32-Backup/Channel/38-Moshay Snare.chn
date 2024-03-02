@@ -1,0 +1,13 @@
+#2.0# 5 "Moshay Snare" 0 %0011111100110100 1                                                                                       
+/config "SNARE" 1 GN
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24  79
+/gate OFF GATE -80.0 60.0 1  502  983 0
+/gate/filter OFF 3.0 990.9
+/dyn ON COMP RMS LIN -25.0 5.0 0 4.00 6 0.13  42 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 124.7 +0.00 2.0
+/eq/2 PEQ 224.4 +3.75 2.0
+/eq/3 PEQ 632.5 -9.75 4.3
+/eq/4 VEQ 5k76 +2.50 1.8

@@ -1,0 +1,13 @@
+#2.0# 34 "TJ Hats" 0 %0011111100010100 1                                                                                           
+/config "HI-HAT" 1 GN
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24 400
+/gate OFF GATE -80.0 60.0 1  502  983 0
+/gate/filter OFF 3.0 990.9
+/dyn OFF COMP PEAK LOG 0.0 3.0 1 0.00 10 10.0  151 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 124.7 +0.00 2.0
+/eq/2 PEQ 496.6 +0.00 2.0
+/eq/3 PEQ 1k97 +0.00 2.0
+/eq/4 HShv 10k02 +15.0 2.0

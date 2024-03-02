@@ -1,0 +1,13 @@
+#2.0# 28 "Whisky Drum Vox" 0 %0011111100110100 1                                                                                   
+/config "DR VOX" 1 BL
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24 158
+/gate OFF GATE -80.0 60.0 1  502  983 0
+/gate/filter OFF 3.0 990.9
+/dyn ON COMP PEAK LOG -15.0 3.0 1 0.00 3 0.45  151 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 124.7 +0.75 2.0
+/eq/2 VEQ 432.5 -9.75 2.0
+/eq/3 PEQ 2k60 -6.00 2.6
+/eq/4 PEQ 4k85 +0.25 2.1

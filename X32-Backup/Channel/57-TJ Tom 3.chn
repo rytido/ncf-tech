@@ -1,0 +1,13 @@
+#2.0# 39 "TJ Tom 3" 0 %0011111100011100 1                                                                                          
+/config "TOM 3" 1 GN
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24  59
+/gate ON GATE -56.5 60.0 1  100  504 0
+/gate/filter ON 3.0 403.7
+/dyn OFF COMP PEAK LOG 0.0 3.0 1 0.00 10 10.0  151 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 124.7 +0.00 2.0
+/eq/2 PEQ 701.5 -12.2 2.0
+/eq/3 PEQ 1k97 +0.00 2.0
+/eq/4 HShv 10k02 +9.00 2.0

@@ -1,0 +1,13 @@
+#2.0# 15 "Whisky Snare Top" 0 %0011111100111100 1                                                                                  
+/config "SNR Top" 1 GN
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24 110
+/gate ON GATE -38.5 60.0 1 0.50  185 0
+/gate/filter OFF 3.0 990.9
+/dyn ON COMP PEAK LOG -21.5 3.0 1 0.00 4 0.45  45 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 176.2 -3.50 1.2
+/eq/2 PEQ 4k37 -14.5 7.1
+/eq/3 PEQ 12k33 +4.50 1.7
+/eq/4 PEQ 11k11 +0.25 2.1

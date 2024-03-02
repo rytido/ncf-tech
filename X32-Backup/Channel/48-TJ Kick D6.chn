@@ -1,0 +1,13 @@
+#2.0# 29 "TJ Kick D6" 0 %0011111100011000 1                                                                                        
+/config "KICK-D6" 1 GN
+/delay OFF   0.3
+/preamp +0.0 OFF OFF 24  20
+/gate ON GATE -54.0 60.0 1 1.59   5 0
+/gate/filter ON LC12 60.4
+/dyn OFF COMP PEAK LOG 0.0 3.0 1 0.00 10 10.0  151 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 60.4 +15.0 2.0
+/eq/2 PEQ 496.6 +0.00 2.0
+/eq/3 PEQ 1k97 +0.00 2.0
+/eq/4 HShv 153.5 -15.0 2.0

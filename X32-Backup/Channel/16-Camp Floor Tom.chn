@@ -1,0 +1,13 @@
+#2.0# 76 "Camp Floor Tom" 0 %0011111100011100 1                                                                                    
+/config "FL TOM" 1 GN
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24  92
+/gate ON GATE -35.5 40.0 18 8.93  276 0
+/gate/filter ON 1.0 224.4
+/dyn OFF COMP PEAK LOG 0.0 3.0 1 0.00 10 10.0  151 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 124.7 -0.75 2.0
+/eq/2 PEQ 570.2 -15.0 2.0
+/eq/3 PEQ 1k97 +0.00 2.0
+/eq/4 HShv 10k02 +0.00 2.0

@@ -1,0 +1,13 @@
+#2.0# 5 "BBM Tom" 0 %0011111100111100 1                                                                                            
+/config "TOM" 1 GN
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24  75
+/gate ON GATE -29.0 25.0 0 0.56  441 0
+/gate/filter ON 1.0 182.4
+/dyn ON COMP PEAK LOG -30.0 5.0 1 5.00 41 0.02   5 PRE 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 138.4 +4.50 1.3
+/eq/2 VEQ 266.7 -8.50 3.7
+/eq/3 PEQ 3k43 +5.00 2.5
+/eq/4 HCut 7k87 +0.00 2.0

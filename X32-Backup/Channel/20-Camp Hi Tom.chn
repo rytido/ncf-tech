@@ -1,0 +1,13 @@
+#2.0# 74 "Camp Hi Tom" 0 %0011111100011000 1                                                                                       
+/config "HIGH TOM" 1 GN
+/delay OFF   0.3
+/preamp +0.0 OFF OFF 24  20
+/gate ON GATE -37.0 40.0 18 11.2  276 0
+/gate/filter ON 1.0 390.0
+/dyn OFF COMP PEAK LOG 0.0 3.0 1 0.00 10 10.0  151 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 209.4 +6.00 2.0
+/eq/2 PEQ 276.1 -8.75 2.0
+/eq/3 PEQ 654.7 -12.2 3.2
+/eq/4 HCut 5k57 +0.00 2.0

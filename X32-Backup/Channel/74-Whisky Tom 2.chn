@@ -1,0 +1,13 @@
+#2.0# 19 "Whisky Tom 2" 0 %0011111100111100 1                                                                                      
+/config "TOM 2" 1 GN
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24  42
+/gate ON GATE -20.0 60.0 1 0.50  337 0
+/gate/filter OFF 3.0 990.9
+/dyn ON COMP PEAK LOG -11.0 3.0 1 0.00 10 10.0  151 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 88.3 -0.25 1.8
+/eq/2 PEQ 654.7 -14.0 2.1
+/eq/3 PEQ 1k84 +0.50 4.1
+/eq/4 PEQ 4k85 +4.25 1.6

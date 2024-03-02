@@ -1,0 +1,13 @@
+#2.0# 17 "Whisky Hats" 0 %0011111100110100 1                                                                                       
+/config "HATS" 1 GN
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24 400
+/gate OFF GATE -23.5 60.0 1  502  983 0
+/gate/filter OFF 3.0 990.9
+/dyn ON COMP PEAK LOG -18.5 7.0 1 0.00 10 0.40  55 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 124.7 +0.00 2.0
+/eq/2 PEQ 496.6 +0.00 2.0
+/eq/3 PEQ 1k97 +0.00 2.0
+/eq/4 HShv 10k02 +0.00 2.0

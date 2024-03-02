@@ -1,0 +1,13 @@
+#2.0# 9 "Moshay Vocal" 0 %0011111100110100 1                                                                                       
+/config "VOCAL" 1 BL
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24 121
+/gate OFF GATE -80.0 60.0 1  502  983 0
+/gate/filter OFF 3.0 990.9
+/dyn ON COMP RMS LIN -21.5 2.5 3 3.00 4 0.20  258 POST 0
+/dyn/filter ON LC12 216.8
+/eq ON
+/eq/1 PEQ 124.7 +0.00 2.0
+/eq/2 PEQ 496.6 +0.00 2.0
+/eq/3 PEQ 1k97 +0.00 2.0
+/eq/4 HShv 10k02 +0.00 2.0

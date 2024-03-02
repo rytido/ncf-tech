@@ -1,0 +1,6 @@
+#2.0# 3 "AES50 B Inputs" 2 %0000000000000000 1                                                                                                  
+/config/routing/IN B1-8 B9-16 B17-24 B25-32 AUX1-4
+/config/routing/AES50A OUT1-8 OUT9-16 OUT1-8 OUT9-16 P161-8 P169-16
+/config/routing/AES50B OUT1-8 OUT9-16 OUT1-8 OUT9-16 P161-8 P169-16
+/config/routing/CARD B1-8 B9-16 B17-24 B25-32
+

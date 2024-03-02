@@ -1,0 +1,13 @@
+#2.0# 3 "BBM Snare" 0 %0011111100111100 1                                                                                          
+/config "SNARE" 1 GN
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24  64
+/gate ON GATE -34.0 20.0 0 1.26  276 0
+/gate/filter ON 5.0 164.4
+/dyn ON COMP PEAK LIN -40.0 3.0 3 6.00 46 0.04  35 POST 0
+/dyn/filter ON HC12 1k26
+/eq ON
+/eq/1 VEQ 108.7 +1.75 4.1
+/eq/2 PEQ 232.3 +0.00 3.2
+/eq/3 PEQ 677.7 -2.50 3.7
+/eq/4 HShv 1k78 +3.75 2.0

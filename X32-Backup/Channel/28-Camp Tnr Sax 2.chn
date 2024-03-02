@@ -1,0 +1,13 @@
+#2.0# 85 "Camp Tnr Sax 2" 0 %0011111100110100 1                                                                                    
+/config "TNR SAX" 1 WH
+/delay OFF   0.3
+/preamp +4.3 OFF ON 24  46
+/gate OFF GATE -80.0 60.0 1  502  983 0
+/gate/filter OFF 3.0 990.9
+/dyn ON COMP PEAK LOG -20.5 4.0 1 5.00 0 2.00  72 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 248.9 +4.25 2.0
+/eq/2 PEQ 893.4 +6.50 6.1
+/eq/3 PEQ 2k27 -3.00 3.7
+/eq/4 HShv 4k68 +5.75 2.0

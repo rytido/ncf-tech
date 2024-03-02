@@ -1,0 +1,13 @@
+#2.0# 24 "Whisky GTR" 0 %0011111100010100 1                                                                                        
+/config "GTR" 1 RD
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24 104
+/gate OFF GATE -80.0 60.0 1  502  983 0
+/gate/filter OFF 3.0 990.9
+/dyn OFF COMP PEAK LOG -0.5 3.0 1 0.00 10 10.0  151 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 170.2 -2.25 2.0
+/eq/2 PEQ 805.4 -0.25 2.3
+/eq/3 PEQ 1k97 -2.75 2.1
+/eq/4 PEQ 5k20 -1.00 4.1

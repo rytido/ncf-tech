@@ -1,0 +1,13 @@
+#2.0# 7 "BBM Overheads" 0 %0011111100110100 1                                                                                      
+/config "OVERHD" 1 GN
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24 144
+/gate OFF GATE -79.5 60.0 1  502  983 0
+/gate/filter OFF 3.0 990.9
+/dyn ON COMP PEAK LOG -26.5 3.0 2 4.00 58 0.10  20 PRE 0
+/dyn/filter OFF LC12 2k89
+/eq ON
+/eq/1 LShv 339.6 -8.75 2.0
+/eq/2 PEQ 957.3 -3.25 1.7
+/eq/3 VEQ 2k60 +0.75 2.0
+/eq/4 HShv 5k76 +4.50 2.0

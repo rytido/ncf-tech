@@ -1,0 +1,13 @@
+#2.0# 26 "Whisky SR Vox" 0 %0011111100110100 1                                                                                     
+/config "SR VOX" 1 BL
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24 189
+/gate OFF GATE -80.0 60.0 1  502  983 0
+/gate/filter OFF 3.0 990.9
+/dyn ON COMP PEAK LOG -36.5 2.5 1 8.00 10 0.63  151 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 266.7 -6.75 2.0
+/eq/2 PEQ 496.6 -8.75 1.8
+/eq/3 PEQ 1k06 -6.75 3.1
+/eq/4 PEQ 5k57 -5.50 1.1

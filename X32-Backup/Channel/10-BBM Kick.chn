@@ -1,0 +1,13 @@
+#2.0# 2 "BBM Kick" 0 %0011111100111100 1                                                                                           
+/config "KICK" 1 GN
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24  44
+/gate ON GATE -25.0 20.0 0 17.8  77 0
+/gate/filter ON 5.0 2k04
+/dyn ON COMP PEAK LOG -29.5 2.5 2 8.00 41 0.06  30 POST 0
+/dyn/filter ON 3.0 120.5
+/eq ON
+/eq/1 PEQ 50.8 +5.00 1.8
+/eq/2 PEQ 133.7 -7.25 3.5
+/eq/3 PEQ 306.2 -5.00 2.0
+/eq/4 PEQ 1k60 +3.25 1.6

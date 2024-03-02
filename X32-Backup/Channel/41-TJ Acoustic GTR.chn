@@ -1,0 +1,13 @@
+#2.0# 43 "TJ Acoustic GTR" 0 %0011111100110100 1                                                                                   
+/config "AC GTR" 1 RD
+/delay OFF   0.3
+/preamp +0.0 OFF ON 24  61
+/gate OFF GATE -80.0 60.0 1  502  983 0
+/gate/filter OFF 3.0 990.9
+/dyn ON COMP PEAK LOG -42.0 3.0 1 5.00 30 10.0  151 POST 0
+/dyn/filter OFF LC12 182.4
+/eq ON
+/eq/1 PEQ 124.7 +0.00 2.0
+/eq/2 PEQ 496.6 +0.00 2.0
+/eq/3 PEQ 1k97 +0.00 2.0
+/eq/4 VEQ 6k85 -4.75 2.0

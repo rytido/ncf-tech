@@ -1,0 +1,13 @@
+#2.0# 82 "Camp Trumpet" 0 %0011111100110100 1                                                                                      
+/config "TRUMPET" 1 WH
+/delay OFF   0.3
+/preamp -3.0 OFF ON 24 144
+/gate OFF GATE -80.0 60.0 1  502  983 0
+/gate/filter OFF 3.0 990.9
+/dyn ON COMP PEAK LOG -22.0 4.0 1 0.00 0 2.83  68 POST 0
+/dyn/filter OFF 3.0 990.9
+/eq ON
+/eq/1 PEQ 124.7 +0.00 2.0
+/eq/2 PEQ 496.6 +0.00 2.0
+/eq/3 PEQ 2k43 -5.50 2.0
+/eq/4 PEQ 10k02 -6.25 2.0
